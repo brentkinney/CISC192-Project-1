@@ -28,7 +28,8 @@ int main()
 
 	//calculate the cost and display it
 	cost = (waterNeeded * 0.77) + 100.00;
-	cout << "The cost to fill the pool is $" << cost << endl;
+	double round1 = round(cost * 100) / 100;
+	cout << "The cost to fill the pool is $" << round1 << endl;
 
 	cout << "Programmed by Brent Kinney" << endl;
 
