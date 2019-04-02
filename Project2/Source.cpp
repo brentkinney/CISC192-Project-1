@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	double width, length, depth, volume, cost;
+	double width, length, depth, volume, cost, waterNeeded;
 
 	//get the width of the pool
 	cout << "What is the width of the pool? ";
@@ -18,10 +18,19 @@ int main()
 	cout << "What is the depth of the pool? ";
 	cin >> depth;
 
-	//calculate the volume
+	//calculate the volume and display it
 	volume = width * length * depth;
 	cout << "The Volume of the pool is " << volume << " cubic feet" << endl;
 
+	//calculate the water needed to fill the pool and display it
+	waterNeeded = (width - 0.25) * (length - 0.25) * (depth - 0.25);
+	cout << "The water needed to fill the pool is " << waterNeeded << " cubic feet" << endl;
+
+	//calculate the cost and display it
+	cost = (waterNeeded * 0.77) + 100.00;
+	cout << "The cost to fill the pool is $" << cost << endl;
+
+	cout << "Programmed by Brent Kinney" << endl;
 
 	cout << "Press [Enter] key to end..."; //prompt lets user know
 	cin.ignore(256, '\n');
