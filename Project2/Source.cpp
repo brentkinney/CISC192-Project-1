@@ -18,6 +18,9 @@ int main()
 	cout << "What is the depth of the pool? ";
 	cin >> depth;
 
+	//Display the given measurements
+	cout << "The pool dimensions given are: " << width << "w " << length << "l and " << depth << "d" << endl;
+
 	//calculate the volume and display it
 	volume = width * length * depth;
 	cout << "The Volume of the pool is " << volume << " cubic feet" << endl;
