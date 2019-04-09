@@ -26,7 +26,7 @@ int main()
 	cout << "The Volume of the pool is " << volume << " cubic feet" << endl;
 
 	//calculate the water needed to fill the pool and display it
-	waterNeeded = (width - 0.25) * (length - 0.25) * (depth - 0.25);
+	waterNeeded = width * length * (depth - 0.25);
 	cout << "The water needed to fill the pool is " << waterNeeded << " cubic feet" << endl;
 
 	//calculate the cost and display it
